@@ -50,6 +50,7 @@ export class RestAPIStack extends cdk.Stack {
         },
       });
 
+      //Added this part in privous commit
       const deleteMovieFn = new lambdanode.NodejsFunction(this, "DeleteMovieFn", {
         architecture: lambda.Architecture.ARM_64,
         runtime: lambda.Runtime.NODEJS_16_X,
